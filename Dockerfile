@@ -23,11 +23,9 @@ RUN conda install -y \
     seaborn \
     theano \
     jupyter \
-    && conda clean --yes --tarballs --packages --source-cache \
-    && pip install --upgrade -I setuptools \
-    && pip install --upgrade keras \
-    && pip install --upgrade tensorflow \
-    && pip install --upgrade xgboost
+    tensorflow \
+    keras \
+    && conda clean --yes --tarballs --packages --source-cache
 
 VOLUME /notebook
 WORKDIR /notebook
