@@ -26,7 +26,7 @@ RUN conda install -y \
     && conda clean --yes --tarballs --packages --source-cache \
     && pip install --upgrade -I setuptools \
     && pip install --upgrade keras \
-    && pip install --upgrade tensorflow
+    && pip install --upgrade tensorflow \
     && pip install --upgrade xgboost
 
 VOLUME /notebook
